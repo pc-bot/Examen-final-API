@@ -1,0 +1,57 @@
+openapi: 3.0.0
+info : 
+  title : STD24011
+  version : 1.0.0
+  description: This is a specification of STD24011
+
+servers:
+  - url: http://localhost:8000
+
+paths: 
+  /health:
+    get: 
+      
+      description: retourne ok 
+      responses:
+        '200':
+          description: OK
+          content: 
+            text/plain: 
+              schema : 
+                example : 
+                  Ok
+
+  /phones:
+    get:
+      tags :
+        - Phones
+      description : retourne la liste des /phones
+      responses:
+        '200':
+          description : voici la liste des phones 
+          content :
+            application/json: 
+              
+              
+              
+            
+
+
+
+components:
+  schemas:
+    Examples:
+      required:
+        - id
+        - brand
+        - model
+        - characteristics
+      type : object
+        schema:
+        
+      
+      
+
+       
+      
+        
